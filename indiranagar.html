@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Perfect Day in Indiranagar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #faf9f6; 
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .chapter {
+            min-height: 100vh;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #d48166; 
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .story-text {
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1rem;
+            padding: 0 15px;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border: 8px solid #fff;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="chapter fade-in">
+        <h2>Indiranagar Date</h2>
+        <p class="subtitle">Pizza, Cupcakes & Deep Conversations</p>
+        
+        <p class="story-text">
+            From grabbing those amazing pizzas and cupcakes at Glen's to walking what felt like miles, this day was super cool. Between the shopping and our deep conversations, it’s one of those perfect dates I'll always remember.
+        </p>
+
+        <div class="image-gallery">
+            <img src="glens-vinay.jpg" alt="Smiling at Glen's Bakehouse">
+            <img src="indiranagar-portrait.jpg" alt="Portrait in Indiranagar">
+            <img src="glens-treats.jpg" alt="Cupcakes and Pink Drink">
+            <img src="glens-ambience.jpg" alt="Drink on the table">
+            <img src="glens-pizza.jpg" alt="Delicious Pizza">
+        </div>
+    </section>
+
+</body>
+</html>
